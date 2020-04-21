@@ -1,6 +1,11 @@
 
 # Python-web-crawler-get-ziroom.com
 ###
+
+CSDN链接：
+https://blog.csdn.net/Henry_Wang135/article/details/105666538
+
+
 ## request.py是整体的程序
 ###    19-20行需要把AK和SK改成自己的
 ###    26-29行需要把浏览器的配置改成自己的
