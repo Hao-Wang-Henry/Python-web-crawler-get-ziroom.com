@@ -210,6 +210,7 @@ def read_this_page(link, index, error_index):
                 error_sheet.write(error_index, 0, "链接解析异常")
                 error_sheet.write(error_index, 1, str(error_index))
                 error_sheet.write(error_index, 2, link[0])
+                error_sheet.write(error_index, 4, link[1])
                 break
     return index, error_index
 
@@ -219,13 +220,9 @@ for link in All_link:
     print("\r第", index+error_index+1, "条", end='...     ')
     # 函数在这了
     index, error_index = read_this_page(link, index, error_index)
-    if index % 100 == 0:
+    if index+error_index % 100 == 0:
         print()
         print("已找到"+str(index)+"条数据")
-        Beijing.save(r"Beijing.xls")
-        Error.save(r"Error.xls")
-    if error_index % 100 == 0 and error_index != 0:
-        print()
         print("已找到" + str(error_index) + "条异常数据")
         Beijing.save(r"Beijing.xls")
         Error.save(r"Error.xls")
