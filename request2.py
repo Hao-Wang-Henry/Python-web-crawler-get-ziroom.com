@@ -220,7 +220,7 @@ for link in All_link:
     print("\r第", index+error_index+1, "条", end='...     ')
     # 函数在这了
     index, error_index = read_this_page(link, index, error_index)
-    if index+error_index % 100 == 0:
+    if (index+error_index) % 100 == 0:
         print()
         print("已找到"+str(index)+"条数据")
         print("已找到" + str(error_index) + "条异常数据")
