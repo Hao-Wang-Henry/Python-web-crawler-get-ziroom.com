@@ -20,7 +20,7 @@ https://blog.csdn.net/Henry_Wang135/article/details/105666538
 ## read_page.py是从每一页获取信息并print出来
 ###   （没有解析价格）
 ###    把4-6行的浏览器配置改了
-###    再把第行的链接改成随意一个房子的链接
+###    再把第9行的链接改成随意一个房子的链接
 ###
 ## number_identify.py是识别图像的程序，可以随意指定一个图像识别
 ###    15-16行改成你自己的AK和SK
